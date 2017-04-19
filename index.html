@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Diccionario Emoji</title>
+    <script type="text/javascript"
+      src="https://code.jquery.com/jquery-2.2.0.min.js">
+    </script>    
+    <script>
+      $(document).ready(function() {
+          $('#showlogin').click(function() {
+            $('#loginpanel').slideToggle('fast', function() {
+            });
+          });
+      });
+    </script>
+    <link href="nuevo.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One" rel="stylesheet">
+  </head>
+  <body background="fondoindex.jpg">
+      <p>
+      <nav style="float:right;">
+      <ul>
+            <li><a href="#" id="showlogin" >Login</a> <a> / </a><a href="autent.html">Sign Up</a></li>
+        </ul>
+              <div id="loginpanel" style="display:none;">
+            <form action="#" method="post">
+            <label>Usuario</label><input type="text" id="username" />
+            <label>Contrase&ntilde;a</label><input type="password" id="password" />
+            <button class = "round" style="float:right; background-color:   #A9A9A9;" type="submit" id="submit">Entrar</button>
+            <a href="autent.html" style="font-size: 13px;">Sign Up</a>                    
+             </form>
+   
+            </div>
+      </nav> 
+    <div class="round">
+    <h1>Emojiccionario</h1>
+    </div>
+    <div>
+      <button class="round" id="empezar">Empezar</button>
+    </div>
+  </body>
+</html>
